@@ -5,6 +5,5 @@ app.controller('controller', function ($scope, $http) {
 
 	$scope.AddCoordinates = function () {
 		$http.post('/addcoordinates', $scope.coordinate);
-		{longitude: "dhgud", latitude:"dhfd"}
 	};
 });
