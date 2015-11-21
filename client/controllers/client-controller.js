@@ -1,11 +1,11 @@
-
+/*CONTROLLER OF INDEX.HTML*/
 app.controller('index-controller', function ($scope, $http) {
 	$http.get('/getcoordinates').success(function (response) {
 		$scope.reportlist = response;
-		var latlng = new google.maps.LatLng(57.8, 14.0);
+		var latlng = new google.maps.LatLng(14.5800, 121.0000);
 
 		var options = {
-		  	zoom: 6,
+		  	zoom: 10,
 		  	center: latlng,
 		  	mapTypeId: google.maps.MapTypeId.ROADMAP
 		}; 
@@ -13,6 +13,7 @@ app.controller('index-controller', function ($scope, $http) {
 		var map = new google.maps.Map(document.getElementById('map'), options);
 
 		var all = response;
+
 
 
 		var gmarkers = [];
@@ -50,13 +51,19 @@ app.controller('form-controller', function ($scope, $http) {
 		title: "Your location"
 	});
 
+	document.getElementById("latbox").value = 14.5800;
+	document.getElementById("lngbox").value = 121.0000;
+
+
 	google.maps.event.addListener(marker, 'dragend', function (event) {
         document.getElementById("latbox").value = this.getPosition().lat();
         document.getElementById("lngbox").value = this.getPosition().lng();
     });
 
-	$scope.AddReport = function () {
 
+	$scope.AddReport = function () {
+		$scope.report.latitude = document.getElementById("latbox").value;
+		$scope.report.longitude = document.getElementById("lngbox").value;
 		$http.post('/addcoordinates', $scope.report);
 	};
 });
