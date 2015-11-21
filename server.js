@@ -16,12 +16,15 @@ server.use(bodyParser.urlencoded({
   extended: true
 }));
 
-/*CONNECT TO DATABASE*/
-/*var dbname = databasename*/
-mongoose.connect('mongodb://localhost:27017/' /*+ dbname*/);
+/*
+CONNECT TO DATABASE
+var dbname = 'databasename'
+mongoose.connect('mongodb://localhost:27017/' + dbname);
 mongoose.connection.on('connected', function() {
 	console.log('connected to port 27017');
 });
+*/
+
 
 
 
