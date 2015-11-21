@@ -1,9 +1,9 @@
 app.controller('controller', function ($scope, $http) {
 	$http.get('/getcoordinates').success(function (response) {
-		$scope.coordinates = response;
+		$scope.reportlist = response;
 	});
 
 	$scope.AddCoordinates = function () {
-		$http.post('/addcoordinates', $scope.coordinate);
+		$http.post('/addcoordinates', $scope.report);
 	};
 });
