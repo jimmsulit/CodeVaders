@@ -7,8 +7,10 @@ var bodyParser = require('body-parser');
 /*MIDDLEWARES*/
 server.use(express.static(__dirname + '/client/views'));
 server.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
-server.use('/angular', express.static(__dirname + '/node_modules/angular/angular.min.js'));
+server.use('/angular', express.static(__dirname + '/node_modules/angular'));
 server.use('/client-controllers', express.static(__dirname + '/client/controllers'));
+server.use('/markerclusterer', express.static(__dirname + '/node_modules/markerclustererplus/src'));
+server.use('/google-maps', express.static(__dirname + '/node_modules/google-maps/lib'));
 
 /*UTILIZE BODYPARSER*/
 server.use(bodyParser.json());

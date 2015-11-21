@@ -6,5 +6,4 @@ module.exports.getcoordinates = function (req, res) {
 
 module.exports.addcoordinates = function (req, res) {
 	coordinates.push(req.body);
-	console.log('here');
-};
+};	

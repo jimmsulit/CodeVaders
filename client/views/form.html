@@ -2,21 +2,18 @@
 <html ng-app="CodeVaders">
 <head>
 	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.min.css">
 
-	<title>Street Smarts</title>
+	<title>Report Crime</title>
 </head>
 <body>
 	<div class="container" ng-controller="controller">
-		
-		<ul ng-repeat="coord in coordinates">
-			<li>{{coord.longitude}}, {{coord.latitude}}</li>
-		</ul>
-
+		<input type="text" ng-model="coordinate.longitude">
+		<input type="text" ng-model="coordinate.latitude">
+		<button ng-click="AddCoordinates()">Submit</button>
+		<a href="/">back</a>
 	</div>
-
-
 
 	<script type="text/javascript" src="/angular/angular.js"></script>
 	<script type="text/javascript" src="/markerclusterer/markerclusterer.js"></script>
