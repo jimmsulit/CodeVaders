@@ -9,13 +9,13 @@
 </head>
 <body>
 	<div class="container" ng-controller="form-controller">
-		Name: <input type="text" ng-model="report.name"><br/>
-		Time: <input type="text" ng-model="report.time"><br/>
-		Crime: <input type="text" ng-model="report.crime"><br/>
-		Longitude: <input type="text" ng-model="report.longitude"  id="lngbox"> Latitude: <input type="text" ng-model="report.latitude"  id="latbox">
+		Name: <input type="text" ng-model="report.name" required><br/>
+		Time: <input type="text" ng-model="report.time" required><br/>
+		Crime: <input type="text" ng-model="report.crime" required><br/>
+		Longitude: <input type="text" ng-model="report.longitude" readonly id="lngbox"> Latitude: <input type="text" ng-model="report.latitude" readonly id="latbox">
 		<div id="map" style="width:500px; height:500px"></div>
 		<button ng-click="AddReport()">Submit</button>
-		<a href="/">back</a>
+		<a href="/">Cancel</a>
 	</div>
 
 	<script type="text/javascript" src="/angular/angular.js"></script>
