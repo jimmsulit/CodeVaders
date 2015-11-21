@@ -9,8 +9,13 @@
 </head>
 <body>
 	<div class="container" ng-controller="controller">
+		<input type="text" ng-model="coordinate.longitude">
+		<input type="text" ng-model="coordinate.latitude">
+		<button ng-click="AddCoordinates()">Submit</button>
 		
-		
+		<ul ng-repeat="coord in coordinates">
+			<li>{{coord.longitude}}, {{coord.latitude}}</li>
+		</ul>
 
 	</div>
 

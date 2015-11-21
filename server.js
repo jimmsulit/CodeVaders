@@ -1,7 +1,7 @@
 var express = require('express');
 var server = express();
 var servercontroller = require('./server/controllers/server-controller.js');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 /*MIDDLEWARES*/
@@ -25,9 +25,9 @@ mongoose.connection.on('connected', function() {
 });
 */
 
-
-
-
+/*METHODS*/
+server.get('/getcoordinates', servercontroller.getcoordinates);
+server.post('/addcoordinates', servercontroller.addcoordinates);
 
 server.listen(3000, function () {
 	console.log('listening on  port 3000');
