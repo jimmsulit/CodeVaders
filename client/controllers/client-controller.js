@@ -15,7 +15,7 @@ app.controller('index-controller', function ($scope, $http) {
 		 heatmap = new HeatmapOverlay(map,
           {
             // radius should be small ONLY if scaleRadius is true (or small radius is intended)
-            "radius": 0.0020,
+            "radius": 0.0090,
             "maxOpacity": 0.50,
             // scales the radius based on map zoom
             "scaleRadius": true,
