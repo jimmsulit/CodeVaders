@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="CodeVaders">
+<head>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.min.css">
+
+	<title>Report Crime</title>
+</head>
+<body>
+	<div class="container" ng-controller="form-controller">
+		
+		Time: <input type="text" ng-model="report.time" required><br/>
+		Crime: <input type="text" ng-model="report.crime" required><br/>
+		Desc: <input type="text" ng-model="report.desc" required><br/>
+		<!--Search Address: <input type="text" ng-model="report.address" id="address" required><button ng-click="geocodeAddress()">Search</button><br/>-->
+		Longitude: <input type="text" ng-model="report.longitude" readonly id="lngbox"> Latitude: <input type="text" ng-model="report.latitude" readonly id="latbox">
+		<div id="map" style="width:500px; height:500px"></div>
+		<button ng-click="AddReport()">Submit</button>
+		<a href="/">Cancel</a>
+	</div>
+
+	<script type="text/javascript" src="/angular/angular.js"></script>
+	<script type="text/javascript" src="/markerclusterer/markerclusterer.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="/plugins/heatmap.js"></script>
+    <script src="/plugins/gmaps-heatmap.js"></script>
+	<script type="text/javascript" src="/client-controllers/app.js"></script>
+	<script type="text/javascript" src="/client-controllers/client-controller.js"></script>
+	
+</body>
+</html>

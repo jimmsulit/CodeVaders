@@ -8,13 +8,14 @@
 </head>
 <body id="main-map">
   <div class="navbar row">
+    <input class="search-bar" id="address" type="text" value="SEARCH LOCATION    🔍">
     <div class=" navbar1">
       <a href="#!" class="hamburger">☰</a>
       <a href="map.html" class="links">CRIME MAPS</a>
       <a href="nearby.html" class="links">NEARBY</a>
       <a href="statistics.html" class="links">STATISTICS</a>
     </div>
-    <div class="navbar2" style="background-color: #1abc9c">
+    <div class="navbar2">
       <a href="form.html" class="links">REPORT A CRIME</a>
       <a href="contact.html" class="links add-margin-right-20px">CONTACT US</a>
     </div>
@@ -24,51 +25,15 @@
     <h1 class="profile-name">DARTH VADER</h1>
     <div class="row profile-nav">
       <a href="profile.html">> PROFILE</a>
-      <a href="form.html">> REPORTS</a>
+      <a href="report.html">> REPORTS</a>
       <a href="settings.html">> SETTINGS</a>
       <a class="logout" href="index.html">> LOG-OUT</a>
     </div>
   </div>
-  <div class="report-crime-body" ng-controller="form-controller">
-    <div class="container">
-      <div class="row">
-        <h1>REPORT A CRIME</h1>
-        <div class="row">
-          <div class="col-md-4">
-            <p>DATE:</p>
-          </div>
-          <input class="date" type="text" ng-model="report.time" required>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p>TYPE OF INCIDENT:</p>
-          </div>
-          <input class="date" type="text" ng-model="report.crime" required>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p>LOCATION OF INDCIDENT:</p>
-          </div>
-          <input class="date" type="text" id="address">
-        </div>
-        <div class="row">
-          <input class="geo-button" id="submit" type="button" value="Search">
-        </div>
-        <div class="row">
-          <div id="map" style="width: 100%; height:500px"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p class="description">DESCRIPTION:</p>
-          </div>
-          <textarea class="description date" type="text" ng-model="report.desc" required></textarea>
-        </div>
-        <button ng-click="AddReport()" class="submit-button">SUBMIT</button>
-        <div class="hide">
-        Longitude: <input type="text" ng-model="report.longitude" readonly id="lngbox"> Latitude: <input type="text" ng-model="report.latitude" readonly id="latbox">
-        </div>
-      </div>
-    </div>
+
+  <div ng-controller="index-controller">
+    <div id="map" style="margin-top: -30px; width:100%; height: 100%"></div>
+    <a href="/form.html">report crime</a>
   </div>
 
   <script type="text/javascript" src="/angular/angular.js"></script>
