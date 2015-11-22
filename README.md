@@ -6,16 +6,20 @@ A Navigational reference for smart travelling and crowd-sourcing app for crime r
 ![Screenshot #2](https://files.slack.com/files-pri/T0F20S3T7-F0F2M1QJ2/6-side-bar.jpg)
 ![Screenshot #3](https://files.slack.com/files-pri/T0F20S3T7-F0F2EBSAF/login_sample.jpg)
 
-## Tech and Data Used
+## Tech Used
 * Google Maps API
-* HeatMap JS
+* Heatmaps JS
 * Bootstrap
 * Javascript
-* MEAN Stack
-* Data.gov.ph
+* Express JS
+* Angular JS
+* Node JS
 * Marker Clusterer JS
-* Jquery
+* jQuery
+
+## Data Used
 * PNP Data for NCR
+* Data.gov.ph
 
 ## Credits
 
