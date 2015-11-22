@@ -298,11 +298,17 @@ a:active {
 
 .geo-button2 {
 	position: absolute;
-	background-color: red;
-	height: 500px;
-	width: 50px;
-	z-index: 900;
+	background-color: white;
+	height: 60px;
+	width: 100px;
+	z-index: 9000;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	margin-left: 1050px;
+	border: none;
+	border: 1px solid white;
+	color: black;
+	font-size: 16px;
+	margin-top: 15px;
 }

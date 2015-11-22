@@ -74,7 +74,34 @@ app.controller('index-controller', function ($scope, $http) {
 		heatmap.setData(testData);
 
 		var markerCluster = new MarkerClusterer(map, gmarkers);
+		 	var geocoder = new google.maps.Geocoder();
 
+		 	document.getElementById('submit').addEventListener('click', function() {
+		 	  geocodeAddress(geocoder, map);
+		 	});
+
+		 	function geocodeAddress(geocoder, resultsMap) {
+		 	  var address = document.getElementById('address').value;
+		 	  geocoder.geocode({'address': address}, function(results, status) {
+		 	    if (status === google.maps.GeocoderStatus.OK) {
+		 	      resultsMap.setCenter(results[0].geometry.location);
+		 	      var lat = results[0].geometry.location.lat();
+		 	      var lng = results[0].geometry.location.lng();
+		 	      var latlng = new google.maps.LatLng(lat, lng);
+		 	      marker.setPosition(latlng);
+		 	    } else {
+		 	      alert('Geocode was not successful for the following reason: ' + status);
+		 	    }
+		 	  });
+		 	}
+
+
+			$scope.AddReport = function () {
+				$scope.report.latitude = document.getElementById("latbox").value;
+				$scope.report.longitude = document.getElementById("lngbox").value;
+				$http.post('/addcoordinates', $scope.report);
+				window.location = "/map.html";
+			};
 	});
 
 
