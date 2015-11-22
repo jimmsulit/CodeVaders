@@ -2,9 +2,9 @@
 A Navigational reference for smart travelling and crowd-sourcing app for crime reporting.
 
 ## Screenshots
-![Screenshot #1](https://files.slack.com/files-pri/T0F20S3T7-F0F2M2SHM/main-map-with_info2.jpg)
-![Screenshot #2](https://files.slack.com/files-pri/T0F20S3T7-F0F2M1QJ2/6-side-bar.jpg)
-![Screenshot #3](https://files.slack.com/files-pri/T0F20S3T7-F0F2EBSAF/login_sample.jpg)
+[Screenshot #1](https://files.slack.com/files-pri/T0F20S3T7-F0F2M2SHM/main-map-with_info2.jpg)
+[Screenshot #2](https://files.slack.com/files-pri/T0F20S3T7-F0F2M1QJ2/6-side-bar.jpg)
+[Screenshot #3](https://files.slack.com/files-pri/T0F20S3T7-F0F2EBSAF/login_sample.jpg)
 
 ## Tech Used
 * Google Maps API
