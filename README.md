@@ -1,8 +1,15 @@
 #StreetSmart
-
+Navigational reference for smart travelling and crowd-sourcing app for crime reporting
 #‪#‎Screenshots‬
 ![<Image Title>](url to screenshot)
 ## Tech and Data Used
-*<List of libs, frameworks, tools, languages, and open data>
+*Google Maps API
+*HeatMap JS
+*Bootstrap
+*Javascript
+*MEAN Stack
+*Data.gov.ph
+*Marker Clusterer JS
+*Jquery
 ## Credits
-*<Authors/Members - Role>
+*Jimson Sulit -
