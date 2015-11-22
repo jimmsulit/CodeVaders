@@ -24,16 +24,52 @@ var coordinates = [
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509615235},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509657389},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509612363},
-	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509234543},
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.612343309234543},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509123435},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509456542},
-	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509623452},
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.123412349623452},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509663456},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509634563},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509223452},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509623454},
 	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509662345},
-	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509234523}
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.606247509234523},
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.562389157751266},
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.569450277627729},
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.580830665348028},
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.01338958740234, latitude: 14.092870981273098},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.14007568359375, latitude: 14.580830665348028},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.14007568359375, latitude: 14.569450277627729},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.10797500610352, latitude: 14.549844728509209},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.0992202758789, latitude: 14.562389157751266},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.02677917480469, latitude: 14.493427532721933},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.00600814819336, latitude: 14.483455399276783},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.02094268798828, latitude: 14.48279057443613},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.0468635559082, latitude: 14.48594847468155},
+
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.06935119628906, latitude: 14.521014763453667},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.03089904785156, latitude: 14.496086692550637},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.02317428588867, latitude: 14.499078209217886},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 121.03639221191406, latitude: 14.534308586395607},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 120.99622344970703, latitude: 14.531649885755032},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 120.99467849731445, latitude: 14.53779808244641},
+
+	{desc: "Description", time: 2013, crime: "Physical Injury",  longitude: 120.98231887817383, latitude: 14.534807089205092},
+
 
 	];
 
